@@ -1,0 +1,17 @@
+<html>
+  
+  <form method="POST" action="/sendData">
+
+<input type="text" name="title"/>
+    <input type="text" name="body"/>
+    <input type="submit" value="send">
+  </form>
+
+
+ {{#each d}}
+  <p>id {{this.id}}</p>
+ 
+   <a href="/fetch/{{this.id}}">nam {{this.title}}</a>
+  <a href="/dele/{{this.id}}"> delete</a>
+  {{/each}}
+</html>
