@@ -7,7 +7,7 @@ const hbs=require("hbs");
 const app = Exp();
 
 
-/*
+
 app.set('view engine','hbs')
 app.use(Exp.urlencoded({extended:false}));
 const db = mysql.createConnection({
@@ -114,7 +114,7 @@ app.get('/fetch/:id',(req,res)=>{
 app.listen(8080, () => {
   console.log('Server up and running!');
 });
- */
+
 /*killall 9 node
 pkill node
 npm start
